@@ -1,5 +1,7 @@
 function adress() {
     let err = document.getElementById("err")
+    let bottomerr = document.getElementById("bottomerr")
+    bottomerr.innerText = null;
     err.innerText = null;
     let name = document.getElementById("name").value
     let pincode = document.getElementById("pincode").value
@@ -23,7 +25,9 @@ function adress() {
     }
     if (flag == true) {
         
-        err.innerText =`please fill the ${errr}`;
+        err.innerText = `please fill the ${errr}`;
+        bottomerr.innerText = `please fill the ${errr}`
+        
 
     }
     else {

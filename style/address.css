@@ -8,7 +8,7 @@
     margin-top: 50px;
     margin-bottom: 200px;
     padding: 25px;
-    background-color: blanchedalmond;
+    
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 input{
@@ -16,6 +16,8 @@ input{
     height: 50px;
     margin-bottom: 10px;
     font-size: 15px;
+    border: 0.5px solid rgb(209, 209, 209);
+    border-radius: 5px;
    
 }
 label{
@@ -25,6 +27,7 @@ label{
 .inputClass{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 button{
     width: 40%;
@@ -34,24 +37,32 @@ button{
     margin-top: 30px;
     margin: auto;
     border-radius: 50px;
-    background-color: green;
+    background-color: rgb(163, 0, 122);
+    color: white;
     border: 1px solid green;
     cursor: pointer;
+    font-weight: bolder;
 }
 #add{
     font-size: 25px;
     margin-bottom: 50px;
-    margin-top: 10px;
-    display: flex;
+    
 }
 #btn{
     display: flex;
-    justify-content: space-between;
+   
     margin-top: 10px;
 }
-#err{
-    margin-left: 100px;
+#err,#bottomerr{
+    
     color: red;
     font-style: italic;
+    font-size: 25px;
+}
+h2{
+    background-color: rgb(223, 223, 223);
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    
 }
 
