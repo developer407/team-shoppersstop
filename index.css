@@ -173,8 +173,13 @@ header span {
 
 .on-hover-show-div{
   /* border: 1px solid black; */
-  margin-top: 150px;
-  display: none;
+  display: block;
+  position: fixed;
+  top: 145px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+
 }
 
 .bargain-div{
@@ -223,7 +228,7 @@ header span {
   margin-left:30px;
 }
 .bargain-discount,.woman-discount,.kids-discount,.beauty-discount,.men-discount,.watches-discount > p{
-  line-height: 32px;
+  line-height: 28px;
   cursor: pointer;
   
 }
@@ -266,7 +271,12 @@ header span {
   display: flex;
 }
 
-.all-indian-war,.kurtas-kurtis-tops,.bottom-wear,.indianwear-sets,.indianwear-dresses,.all-bags-wallets,.backpacks,.handbags,.wallets-clutches,.all-sunglasses-frames,.shop-by-shape,.frames-contact-lenses,.fashion-semi-precious,.fashion-accessories,.all-western-wear,.top-wear,.dresses-jumpsuits,.jeans-jeggings,.all-lingerie-night-wear,.bras,.briefs,.lingerie-sets,.shapewear,.swimwear,.all-boys,.innerwear-nightwear,.all-girls,.dresses,.all-school-essentials,.bags,.school-accessories,.shop-by-brands,.boys-footwear,.girls-footwear{
+.all-indian-war,.kurtas-kurtis-tops,.bottom-wear,.indianwear-sets,.indianwear-dresses,.all-bags-wallets,.backpacks,.handbags,.wallets-clutches,.all-sunglasses-frames,.shop-by-shape,.frames-contact-lenses,.fashion-semi-precious,.fashion-accessories,.all-western-wear,.top-wear,.dresses-jumpsuits,.jeans-jeggings,.all-lingerie-night-wear,.bras,.briefs,.lingerie-sets,.shapewear,.swimwear,.all-boys,.innerwear-nightwear,.all-girls,.dresses,.all-school-essentials,.bags,.school-accessories,.shop-by-brands,.boys-footwear,.girls-footwear,.all-clothing,.t-shirts-polos,.shirts,.jeans,.trousers,.shorts,.sports-activewear,.mask,.personal-protection,.wallet-card-holder,.belts,.pens-combos,.travel-luggage,.mobile-tablet,.rectangle,.all-make-up,.face{
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.workingArea{
+  border: 1px solid black;
+  margin-top: 145px;
 }

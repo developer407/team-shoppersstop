@@ -1,3 +1,6 @@
+import navbar from "/scripts/navbarAndFooter.js";
+navbarDivArea.innerHTML = navbar();
+
 // on scroll bar hided the linksbar
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -392,8 +395,8 @@ let k1Arr = [
 
 let be1Arr = [
   {
-    be1Details:`<p>All Make Up</p>
-    <p>Face</p>
+    be1Details:`<p class = "all-make-up">All Make Up</p>
+    <p class = "face">Face</p>
     <p>All Face</p>
     <p>BB & CC Cream</p>
     <p>Blush</p>
@@ -494,19 +497,19 @@ let be1Arr = [
 let m1Arr = [
 
   {
-    m1Details:`<p>All Clothing</p>
-  <p>T-Shirts & Polos</p>
-  <p>Shirts </p>
+    m1Details:`<p class = "all-clothing">All Clothing</p>
+  <p class = "t-shirts-polos">T-Shirts & Polos</p>
+  <p class = "shirts">Shirts </p>
   <p>All Shirts</p>
   <p>Casual</p>
   <p>Formal</p>
-  <p>Jeans</p>
-  <p>Trousers</p>
+  <p class = "jeans">Jeans</p>
+  <p class = "trousers">Trousers</p>
   <p>All Trousers</p>
   <p>Casual</p>
   <p>Formal</p>
-  <p>Shorts</p>
-  <p>Sports & Activewear</p>
+  <p class = "shorts">Shorts</p>
+  <p class = "sports-activewear">Sports & Activewear</p>
   <p>All Sports & Activewear</p>
   <p>T-Shirts</p>
   <p>Joggers & Track Pants</p>
@@ -514,19 +517,19 @@ let m1Arr = [
   },
 
   {
-    m1Details:`<p>Mask</p>
-  <p>Personal Protection Equipment</p>
-  <p>Wallet & Card Holders</p>
-  <p>Belts</p>
-  <p>Pens & Combos</p>
-  <p>Travel & Luggage</p>
+    m1Details:`<p class = "mask">Mask</p>
+  <p class = "personal-protection">Personal Protection Equipment</p>
+  <p class = "wallet-card-holder">Wallet & Card Holders</p>
+  <p class = "belts">Belts</p>
+  <p class = "pens-combos">Pens & Combos</p>
+  <p class = "travel-luggage">Travel & Luggage</p>
   <p>All Travel & Luggage</p>
   <p>Backpacks</p>
   <p>Soft Luggage</p>
   <p>Essentials</p>
   <p>Hard Luggage</p>
   <p>Laptop Bag</p>
-  <p>Mobile & Tablet Accessories</p>
+  <p class = "mobile-tablet">Mobile & Tablet Accessories</p>
   `
   },
 
@@ -542,14 +545,14 @@ let m1Arr = [
   },
 
   {
-    m1Details:`<p>All Sunglasses & Frames</p>
-  <p>Shop by Shape</p>
+    m1Details:`<p class = "all-sunglasses-frames">All Sunglasses & Frames</p>
+  <p class = "shop-by-shape">Shop by Shape</p>
   <p>Aviator</p>
   <p>Wayfarers</p>
   <p>Sporty</p>
   <p>Frames & Contact Lenses</p>
-  <p>Frames & Contact Lenses</p>
-  <p>Rectangle</p>
+  <p class = "frames-contact-lenses">Frames & Contact Lenses</p>
+  <p class = "rectangle">Rectangle</p>
   `
   },
 
@@ -587,6 +590,39 @@ let m1Arr = [
   }
 ]
 
+let wa1Arr = [
+  {
+    wa1Details:`<P>All Watches</P>
+    <P>Smartwatch & Fitness Bands</P>
+    <P>Hybrid</P>
+    <P>Analog</P>
+    <P>Analog Digital</P>
+    <P>Digital</P>
+    <P>Chronograph</P>
+    `
+  },
+
+  {
+    wa1Details:`<P>All Watches</P>
+    <P>Smartwatch & Fitness Bands</P>
+    <P>Hybrid</P>
+    <P>Analog</P>
+    <P>Analog Digital</P>
+    <P>Digital</P>
+    <P>Chronograph</P>
+    <p>Digital</p>
+    `
+  },
+
+  {
+    wa1Details: `<P>All Watches</P>
+    <p>Boys</p>
+    <p>Girls</p>
+    `
+  }
+
+]
+
 let bargainDiscountDiv = document.querySelector(".bargain-discount");
 let womanDiscountDiv = document.querySelector(".woman-discount");
 let kidsDiscountDiv = document.querySelector(".kids-discount");
@@ -599,7 +635,7 @@ womanDiscountDiv.innerHTML = w1Arr[0].w1Details;
 kidsDiscountDiv.innerHTML = k1Arr[0].k1Details;
 beautyDiscountDiv.innerHTML = be1Arr[0].be1Details;
 menDiscountDiv.innerHTML = m1Arr[0].m1Details;
-
+watchesDiscountDiv.innerHTML = wa1Arr[0].wa1Details;
 
 for(let i = 0; i < b1.length; i++){
   b1[i].addEventListener("mouseover",function(){
@@ -632,6 +668,12 @@ for(let i = 0; i < m1.length; i++){
   })
 }
 
+for(let i = 0; i < wa1.length; i++){
+  wa1[i].addEventListener("mouseover",function(){
+    wa1Index(wa1[i],i)
+  })
+}
+
 
 function b1Index(ele,i){
   bargainDiscountDiv.innerHTML = b1Arr[i].b1Details;
@@ -651,4 +693,8 @@ function be1Index(ele,i){
 
 function m1Index(ele,i){
   menDiscountDiv.innerHTML = m1Arr[i].m1Details;
+}
+
+function wa1Index(ele,i){
+  watchesDiscountDiv.innerHTML = wa1Arr[i].wa1Details
 }
