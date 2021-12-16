@@ -54,6 +54,7 @@ function navbar(){
       </div>
 <!-- categories link section -->
     </header>
+    <div class = "links-cover">
     <div class="links">
         <ul>
           <li class="linksLi" id="bargains">
@@ -137,6 +138,7 @@ function navbar(){
             <p>luxe</p>
           </li>
         </ul>
+      </div>
       </div>
 <!-- on hover show this container -->
 

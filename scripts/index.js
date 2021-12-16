@@ -6,8 +6,10 @@ window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (currentScrollPos > 20) {
       document.querySelector(".links").style.display = "none";
+      document.querySelector(".on-hover-show-div").style.display = "none";
     } else {
       document.querySelector(".links").style.display = "initial";
+      document.querySelector(".on-hover-show-div").style.display = "initial";
     }
   }
 
