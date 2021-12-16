@@ -542,26 +542,48 @@ let m1Arr = [
   },
 
   {
-    m1Details:`<p>All Footwear</p>
-  <p>Formal Shoes</p>
-  <p>Casual Shoes</p>
-  <p>Sandals & Floaters</p>
-  <p>Sports Shoes & Sneakers</p>
-  <p>Flip Flops</p>
-  <p>Boots</p>
+    m1Details:`<p>All Sunglasses & Frames</p>
+  <p>Shop by Shape</p>
+  <p>Aviator</p>
+  <p>Wayfarers</p>
+  <p>Sporty</p>
+  <p>Frames & Contact Lenses</p>
+  <p>Frames & Contact Lenses</p>
+  <p>Rectangle</p>
   `
   },
 
   {
-    m1Details:`<p>All Footwear</p>
-  <p>Formal Shoes</p>
-  <p>Casual Shoes</p>
-  <p>Sandals & Floaters</p>
-  <p>Sports Shoes & Sneakers</p>
-  <p>Flip Flops</p>
-  <p>Boots</p>
+    m1Details:`<p>All Watches</p>
+  <p>Smartwatch & Fitness Bands</p>
+  <p>Aviator</p>
+  <p>Analog</p>
+  <p>Analog Digital</p>
+  <p>Digital</p>
+  <p>Chronograph</p>
   `
+  },
 
+  {
+    m1Details:`<p>All Men's Fragrances</p>
+  <p>Perfumes</p>
+  <p>Mist & Deodrants</p>
+  <p>Gift Sets</p>
+  `
+  },
+
+  {
+    m1Details:`<p>All Grooming</p>
+  <p>Skincare</p>
+  <p>Shaving & Kits</p>
+  <p>Bath & Body</p>
+  <p>Haricare</p>
+  `
+  },
+
+  {
+    m1Details:`<p>All Jewellary</p>
+  `
   }
 ]
 
@@ -576,7 +598,8 @@ bargainDiscountDiv.innerHTML = b1Arr[0].b1Details;
 womanDiscountDiv.innerHTML = w1Arr[0].w1Details;
 kidsDiscountDiv.innerHTML = k1Arr[0].k1Details;
 beautyDiscountDiv.innerHTML = be1Arr[0].be1Details;
-menDiscountDiv.innerHTML = m1Arr[0].m1Details
+menDiscountDiv.innerHTML = m1Arr[0].m1Details;
+
 
 for(let i = 0; i < b1.length; i++){
   b1[i].addEventListener("mouseover",function(){
@@ -603,19 +626,29 @@ for(let i = 0; i < be1.length; i++){
   })
 }
 
+for(let i = 0; i < m1.length; i++){
+  m1[i].addEventListener("mouseover",function(){
+    m1Index(m1[i],i)
+  })
+}
+
 
 function b1Index(ele,i){
-  bargainDiscountDiv.innerHTML = b1Arr[i].b1Details
+  bargainDiscountDiv.innerHTML = b1Arr[i].b1Details;
 }
 
 function w1Index(ele,i){
-  womanDiscountDiv.innerHTML = w1Arr[i].w1Details
+  womanDiscountDiv.innerHTML = w1Arr[i].w1Details;
 }
 
 function k1Index(ele,i){
-  kidsDiscountDiv.innerHTML = k1Arr[i].k1Details
+  kidsDiscountDiv.innerHTML = k1Arr[i].k1Details;
 }
 
 function be1Index(ele,i){
-  beautyDiscountDiv.innerHTML = be1Arr[i].be1Details
+  beautyDiscountDiv.innerHTML = be1Arr[i].be1Details;
+}
+
+function m1Index(ele,i){
+  menDiscountDiv.innerHTML = m1Arr[i].m1Details;
 }
