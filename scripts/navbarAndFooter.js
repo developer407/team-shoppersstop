@@ -1,6 +1,6 @@
 
 function navbar(){
-    return `    <!-- header divided into two parts -->
+    return `<!-- header divided into two parts -->
     <header>
       <!-- first box -->
       <div class="inside-box-1">
