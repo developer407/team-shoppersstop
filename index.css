@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+header {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: 70px;
+  position: fixed;  
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+header span {
+  cursor: pointer;
+}
+
+.inside-box-1 {
+  /* border: 1px solid green; */
+  display: flex;
+  width: 23%;
+  color: gray;
+  justify-content: space-around;
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.inside-box-1 > div {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  gap: 5px;
+  cursor: pointer;
+  font-weight: 550;
+}
+
+.inside-box-2 {
+  /* border: 1px solid black; */
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.sub-inside-box-1 {
+  /* border: 1px solid red; */
+  width: 45%;
+  cursor: pointer;
+}
+
+.sub-inside-box-2 {
+  /* border: 1px solid green; */
+  width: 45%;
+  display: flex;
+  position: relative;
+}
+.search-div {
+  /* border: 1px solid blue; */
+  width: 90%;
+}
+.search-icon-div {
+  width: 10%;
+  border: none;
+  border-bottom: 1px solid rgb(190, 189, 189);
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(190, 189, 189);
+  color: gray;
+  font-size: 15px;
+}
+
+#search::placeholder {
+  color: gray;
+}
+
+.sub-inside-box-3 {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid blue; */
+  align-items: center;
+}
+
+.sz {
+  font-size: 26px;
+  color: gray;
+  font-weight: lighter;
+}
+
+#search-result-div {
+  /* border: 1px solid red; */
+  position: fixed;
+  height: 200px;
+  width: 370px;
+}
+
+.links {
+  position: fixed;
+  top: 75px;
+  /* border: 1px solid black; */
+  display: flex;
+  width: 88%;
+  /* height: 50px; */
+  align-items: center;
+  /* left: 2%; */
+  /* margin-top: 15px; */
+  background-color: white;
+  height: 70px;
+  z-index: 2;
+  margin-left: 20px;
+}
+
+.links > ul {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  list-style: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.links > ul > li {
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+}
+
+.links > ul > li:hover{
+  color: tomato;
+  border-bottom: 2px solid tomato;
+}
+
+.links >ul >li >p{
+  cursor: pointer;
+}
+
+.category-icon {
+  visibility: hidden;
+}
+
+.list-img {
+  width: 50px;
+  height: 50px;
+  border-right: 50%;
+  display: none;
+}
+
+.on-hover-show-div{
+  /* border: 1px solid black; */
+  margin-top: 150px;
+  display: none;
+}
+
+.bargain-div{
+  /* border: 1px solid red; */
+  padding-left:20px ;
+  height: 420px;
+  display: flex;
+}
+
+.sub-bargain-div-one{
+  /* border: 1px solid black; */
+  width: 20%;
+}
+
+.sub-bargain-div-one>ul{
+  /* border: 1px solid green; */
+  width: 80%;
+  margin: auto;
+}
+
+.sub-bargain-div-one >ul >li{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid orange; */
+  height: 40px;
+  align-items: center;
+  cursor: pointer;
+  color: gray;
+  padding-left: 15px;
+}
+.sub-bargain-div-one >ul >li:hover{
+  background: rgba(128, 128, 128, 0.11);
+  color: tomato;
+}
+
+.sub-bargain-div-two{
+  /* border: 1px solid pink; */
+  width: 80%; 
+  display: flex;
+  /* margin-top: 15px; */
+}
+
+.bargain-discount,.woman-discount,.kids-discount,.beauty-discount,.men-discount,.watches-discount{
+  /* border: 1px solid green; */
+  width: 25%;
+  margin-left:30px;
+}
+.bargain-discount,.woman-discount,.kids-discount,.beauty-discount,.men-discount,.watches-discount > p{
+  line-height: 32px;
+  cursor: pointer;
+  
+}
+
+.bargain-discount > p:hover,.woman-discount > p:hover,.kids-discount > p:hover,.beauty-discount > p:hover,.men-discount > p:hover,.watches-discount > p:hover{
+  color: tomato;
+  
+}
+
+
+.bargain-image-one,.bargain-image-two{
+  /* border: 1px solid black; */
+  width: 18%;
+  height: 250px;
+  text-align: center;
+  color: tomato;
+  margin-right: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+}
+
+.woman-div{
+  display: flex;
+}
+
+.bargain-div,.woman-div,.kids-div,.beauty-div,.men-div,.watches-div{
+  display: none;
+}
+
+.kids-div{
+  display: flex;
+}
+.beauty-div{
+  display: flex;
+}
+.men-div{
+  display: flex;
+}
+.watches-div{
+  display: flex;
+}
+
+.all-indian-war,.kurtas-kurtis-tops,.bottom-wear,.indianwear-sets,.indianwear-dresses,.all-bags-wallets,.backpacks,.handbags,.wallets-clutches,.all-sunglasses-frames,.shop-by-shape,.frames-contact-lenses,.fashion-semi-precious,.fashion-accessories,.all-western-wear,.top-wear,.dresses-jumpsuits,.jeans-jeggings,.all-lingerie-night-wear,.bras,.briefs,.lingerie-sets,.shapewear,.swimwear,.all-boys,.innerwear-nightwear,.all-girls,.dresses,.all-school-essentials,.bags,.school-accessories,.shop-by-brands,.boys-footwear,.girls-footwear{
+  font-weight: bold;
+  margin-bottom: 8px;
+}
