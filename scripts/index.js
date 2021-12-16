@@ -9,7 +9,6 @@ window.onscroll = function() {
       document.querySelector(".on-hover-show-div").style.display = "none";
     } else {
       document.querySelector(".links").style.display = "initial";
-      document.querySelector(".on-hover-show-div").style.display = "initial";
     }
   }
 
