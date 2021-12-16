@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/e424a3d0f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="signInOtp.css" />
+  </head>
+  <body>
+    <div id="heading">
+      <h4>SIGN IN</h4>
+      <h5 class="h5">Have an account? Sign In</h5>
+    </div>
+
+    <div id="signUp">
+      <div class="input-box">
+        <i class="fas fa-phone-alt"></i>
+        <input
+          type="mobile"
+          placeholder="Mobile Number(10 digits)*"
+          required
+          class="name"
+          id="mobile"
+        />
+      </div>
+    </div>
+
+    <div id="signUp" class="otpdiv">
+      <div class="input-box">
+        <i class="fas fa-sms"></i>
+        <input
+          type="text"
+          placeholder="Enter OTP"
+          required
+          class="name"
+          id="otp"
+        />
+      </div>
+    </div>
+
+    <p class="p" id="message"></p>
+
+    <div id="continue">
+      <button id="btn">SEND OTP</button>
+    </div>
+
+    <div id="continue" class="signbtn">
+      <button class="signinbtn" id="btn2">SIGN IN</button>
+    </div>
+
+    <p class="p" id="signemail">
+      <a href="signwithemail.html">Sign in with Email</a>
+    </p>
+
+    <div id="social">
+      <div id="hrleft"></div>
+      <div id="hrtext">Or via Social Account</div>
+      <div id="hrrigth"></div>
+    </div>
+
+    <div id="socialAccount">
+      <div id="fb">
+        <a href="https://facebook.com">
+          <img
+            src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png"
+            width="50px"
+          />
+        </a>
+      </div>
+
+      <div id="google">
+        <a href="https://google.co.in">
+          <img
+            src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+            width="50px"
+        /></a>
+      </div>
+    </div>
+
+    <h3>Create a new account? <a href="signUp.html">Sign Up</a></h3>
+
+    <div id="offerdiv">
+      <div id="offer">Sign up & get 10 % off</div>
+    </div>
+  </body>
+</html>
+<script src="signInOtp.js"></script>
