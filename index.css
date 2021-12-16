@@ -173,7 +173,7 @@ header span {
 
 .on-hover-show-div{
   /* border: 1px solid black; */
-  display: block;
+  display: none;
   position: fixed;
   top: 145px;
   width: 100%;
