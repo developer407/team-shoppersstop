@@ -668,13 +668,13 @@ for(let i = 0; i < be1.length; i++){
 for(let i = 0; i < m1.length; i++){
   m1[i].addEventListener("mouseover",function(){
     m1Index(m1[i],i)
-    let tShirtPolos = document.querySelector(".t-shirts-polos")
-    tShirtPolos.addEventListener("click",showProductPage)
+    let tShirtPolos = document.querySelector(".t-shirts-polos");
+    tShirtPolos.addEventListener("click",showProductPage);
   })
 }
 
 function showProductPage(){
-  console.log("product Page");
+  window.open("/product page/product.html")
 }
 
 
@@ -714,3 +714,6 @@ allStoreIcon.addEventListener("click",showAllStorePage)
 function showAllStorePage(){
   window.open("allstore/allstore.html")
 }
+
+
+men.addEventListener("click",showProductPage)
