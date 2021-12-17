@@ -2,7 +2,7 @@ import navbar from "/scripts/navbarAndFooter.js";
 navbarDivArea.innerHTML = navbar();
 
 let allStoreIcon = document.querySelector(".all-store-icon")
-
+let accountCircle = document.querySelector(".account-circle")
 // on scroll bar hided the linksbar
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -717,3 +717,9 @@ function showAllStorePage(){
 
 
 men.addEventListener("click",showProductPage)
+console.log(accountCircle)
+
+const showLoginPage = ()=>{
+  window.open("signup-signin/signUp.html")
+}
+accountCircle.addEventListener("click",showLoginPage)

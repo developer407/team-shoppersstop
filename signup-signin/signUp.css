@@ -90,7 +90,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .h3,
-.p {
+.h3 > p {
   text-align: center;
 }
 .h3 + p,

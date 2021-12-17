@@ -631,3 +631,9 @@ function yellow(data) {
 
     showProduct(result)
 }
+
+
+const showLoginPage = ()=>{
+    window.open("../signup-signin/signUp.html")
+  }
+  accountCircle.addEventListener("click",showLoginPage)

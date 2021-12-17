@@ -49,7 +49,7 @@ function navbar(){
         <div class="sub-inside-box-3">
           <span class="material-icons-outlined sz"> favorite_border </span>
           <span class="material-icons-outlined sz"> shopping_bag </span>
-          <span class="material-icons-outlined sz"> account_circle </span>
+          <span class="material-icons-outlined sz account-circle"> account_circle </span>
         </div>
       </div>
 <!-- categories link section -->
