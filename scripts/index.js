@@ -713,11 +713,19 @@ function wa1Index(ele,i){
 allStoreIcon.addEventListener("click",showAllStorePage)
 
 function showAllStorePage(){
-  window.open("allstore/allstore.html")
+  window.open("../allstore/allstore.html")
 }
 
 
 men.addEventListener("click",showProductPage)
+const all_clothing = document.querySelector(".all-clothing");
+all_clothing.onclick = ()=>{
+  showProductPage()
+}
+const t_shirt_polos = document.querySelector(".t-shirts-polos");
+t_shirt_polos.onclick = ()=>{
+  showProductPage()
+}
 
 const showLoginPage = ()=>{
   console.log("here");
