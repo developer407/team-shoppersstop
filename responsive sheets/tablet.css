@@ -1,0 +1,93 @@
+@media screen and (min-width:550px) and (max-width:1020px){
+
+    .sub-inside-box-2>div:not(:last-child){
+        display: none
+    }
+    
+    .search-icon-div{
+        border: none;
+        /* border: 1px solid green; */
+        width: 100%;
+        margin-right: 10px;
+        justify-content: flex-end;
+    
+    }
+    .sub-inside-box-2{
+        /* border: 1px solid brown; */
+        width: 10%;
+    }
+    
+    .inside-box-1{
+        /* border: 1px solid red; */
+        width: 15%;
+    }
+    .inside-box-1>div:not(:last-child){
+    display: none
+    }
+    
+    .category-icon{
+        visibility: visible
+    }
+    
+    .hide{
+        display: none
+    }
+
+    
+.sub-inside-box-1{
+    /* border: 1px solid black; */
+    height: 20px;
+    width:500px;
+}
+
+.sub-inside-box-3{
+    /* border: 1px solid black; */
+    width: 70px;
+    justify-content: space-between;
+}
+.sub-inside-box-3>span:last-child{
+    display: none;
+}
+
+.inside-box-2{
+    /* border: 1px solid green; */
+    width: 75%;
+    
+}
+.sz{
+    font-size: 20px;
+}
+
+.links{
+    width: 100%;
+    padding: 5px;
+    align-items: flex-start;
+    /* overflow: scroll; */
+}
+
+#brands,#luxe{
+    display: none;
+}
+
+ul{
+    /* border: 1px solid black; */
+    gap: 10px;
+    /* width: 100%; */
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+ul li{
+    cursor: pointer;
+}
+
+
+.links >ul >li{
+    /* border: 1px solid green; */
+    height: 100%;
+}
+
+.list-img{
+    display: flex
+}  
+};
