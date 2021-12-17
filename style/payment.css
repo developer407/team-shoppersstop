@@ -1,0 +1,76 @@
+#cardbox,#cash{
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 25px;
+    margin-bottom: 50px;
+    
+}
+#name{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    margin-bottom: 10px;
+}
+#cvv{
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#card{
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+}
+#date>input{
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+}
+button{
+    width: 150px;
+    height: 45px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(163, 0, 122);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+    
+}
+h1{
+    background-color: rgb(223, 223, 223);
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+input{
+    border-radius: 5px;
+}
+#order{
+    width: 53%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+   
+}
+#cashInput{
+    margin-bottom: 20px;
+}
+h2{
+    margin-right: 70px;
+}
+#success{
+    
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+#nameDiv{
+    display: flex;
+}

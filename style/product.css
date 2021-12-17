@@ -1,0 +1,105 @@
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 79%;
+    margin: auto;
+    
+    
+}
+.cardDiv{
+    width: 23%;
+    margin-left: 15px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-bottom: 50px;
+    
+
+}
+.cardDiv>img{
+    width: 100%;
+}
+.priceDiv{
+    display: flex;
+    margin-top: -28px;
+    
+
+}
+.cardDiv>p,.cardDiv>h3,.priceDiv{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.cardDiv>p{
+    margin-top: -15px;
+}
+.cardDiv>h3{
+    margin-top: -1px;
+}
+
+.dis{
+    color: red;
+    margin-left: 8px;
+}
+
+.offPrice{
+    margin-left: 8px;
+    color: rgb(144, 144, 144);
+    text-decoration: line-through;
+}
+#heading{
+    width: 46%;
+    margin: auto;
+    display: flex;
+    
+}
+#heading>h4{
+    margin-left: 19px;
+    font-size: 22px;
+    color: rgb(112, 112, 112);
+    
+}
+h1{
+    font-style: italic;
+}
+#productAndFunc{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    
+}
+#functionality{
+    width: 19%;
+    
+}
+#sortbrand,#sortprice,#sortoffer,#sortColor,#sortDelivery{
+    display: none;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+p{
+    cursor: pointer;
+}
+#functionality>p{
+    font-weight: bold;
+}
+
+#slider{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#fa1{
+    margin-left: 150px;
+}
+#fa2{
+    margin-left: 160px;
+}
+#fa3{
+    margin-left: 165px;
+}
+#faa4{
+    margin-left: 155px;
+}
+#fa5{
+    margin-left: 83px;
+}
