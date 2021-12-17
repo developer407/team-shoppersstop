@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product page</title>
     <link rel="stylesheet" href="style/product.css">
+    <script src="https://use.fontawesome.com/61bdc76d1c.js"></script>
 </head>
 <body>
     <div id="mainBox">
@@ -17,7 +18,7 @@
         <div id="productAndFunc">
             <div id="functionality">
                 <hr>
-                <p onclick="showBrand()">BRANDS</p>
+                <p onclick="showBrand()">BRANDS <i class="fa fa-chevron-down" id="fa1" aria-hidden="true"></i></p>
                 
                 <div id="sortbrand">
                     <p onclick="sortByAdidas(data)">ADIDAS</p>
@@ -27,7 +28,7 @@
                     <p onclick="sortByFratini(data)">Fratini</p>
                 </div>
                 <hr>
-                <p onclick="showOffer()">OFFER</p>
+                <p onclick="showOffer()">OFFER <i class="fa fa-chevron-down" id="fa2" aria-hidden="true"></i></p>
                 
                 <div id="sortoffer">
                     <p onclick="sortByOff30(data)">FLAT 30% OFF</p>
@@ -35,10 +36,24 @@
                     <p onclick="sortByOff70(data)">FLAT 70% OFF</p>
                 </div>
                 <hr>
-                <p onclick="showPrice()">PRICE</p>
+                <p onclick="showPrice()">PRICE <i class="fa fa-chevron-down" id="fa3" aria-hidden="true"></i></p>
                 <div id="sortprice">
                     <p onclick="lowToHeigh(data)">LOW TO HEIGH</p>
                     <p onclick="heighToLow(data)">HEIGH TO LOW</p>
+                </div>
+                <hr>
+                <p onclick="showColor()">COLOR <i class="fa fa-chevron-down" id="faa4" aria-hidden="true"></i></p>
+                <div id="sortColor">
+                    <p onclick="orange(data)">Orange</p>
+                    <p onclick="black(data)">Black</p>
+                    <p onclick="white(data)">White</p>
+                    <p onclick="yellow(data)">Yellow</p>
+                    <p onclick="blue(data)">Blue</p>
+                </div>
+                <hr>
+                <p onclick="showDelivery()">DELIVERY TYPE <i class="fa fa-chevron-down" id="fa5" aria-hidden="true"></i></p>
+                <div id="sortDelivery">
+                    <p>EXPRESS STORE PICK UP</p>
                 </div>
                 <hr>
             </div>

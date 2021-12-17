@@ -1,13 +1,14 @@
 #box{
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 79%;
     margin: auto;
-    justify-content: space-between;
+    
     
 }
 .cardDiv{
     width: 23%;
+    margin-left: 15px;
     
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-bottom: 50px;
@@ -45,9 +46,10 @@
     text-decoration: line-through;
 }
 #heading{
-    width: 45%;
+    width: 46%;
     margin: auto;
     display: flex;
+    
 }
 #heading>h4{
     margin-left: 19px;
@@ -68,7 +70,7 @@ h1{
     width: 19%;
     
 }
-#sortbrand,#sortprice,#sortoffer{
+#sortbrand,#sortprice,#sortoffer,#sortColor,#sortDelivery{
     display: none;
     margin-left: 10px;
     cursor: pointer;
@@ -79,4 +81,25 @@ p{
 }
 #functionality>p{
     font-weight: bold;
+}
+
+#slider{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#fa1{
+    margin-left: 150px;
+}
+#fa2{
+    margin-left: 160px;
+}
+#fa3{
+    margin-left: 165px;
+}
+#faa4{
+    margin-left: 155px;
+}
+#fa5{
+    margin-left: 83px;
 }
