@@ -38,7 +38,9 @@ showSlides();
 
 let data = [
     {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hc2/h04/17548630392862/S21831RGYPO17IB_INK_BLUE.jpg_230Wx334H",
+        imgUrl:"https://sslimages.shoppersstop.com/sys-master/images/hc2/h04/17548630392862/S21831RGYPO17IB_INK_BLUE.jpg_230Wx334H",
+        img1: "https://sslimages.shoppersstop.com/sys-master/images/h4c/hb7/17548633800734/S21831RGYPO17IB_INK_BLUE_alt1.jpg_1088Wx1632H",
+        img2:"https://sslimages.shoppersstop.com/sys-master/images/h30/h0f/17548627312670/S21831RGYPO17IB_INK_BLUE_alt2.jpg_1088Wx1632H",
         brand: "Fratini",
         description: "Stripes Cotton Regular Fit Mens T-Shirt - ink Blue",
         price: "699",
@@ -48,6 +50,7 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h93/hde/17556188102686/AW21IST018_BLACK.jpg_230Wx334H",
+        
         brand: "Infuse",
         description: "Solid Cotton Jersey Regular Fit Mens T-Shirt",
         price: "249",
@@ -57,6 +60,10 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hce/h6d/16208905633822/S21183SLH436N_NAVY.jpg_230Wx334H",
+        img1: "https://sslimages.shoppersstop.com/sys-master/images/h1a/h77/16208012312606/S21183SLH436N_NAVY_alt1.jpg_1088Wx1632H",
+        img2:"https://sslimages.shoppersstop.com/sys-master/images/hf0/h96/16237773979678/S21183SLH436N_NAVY_alt2.jpg_1088Wx1632H",
+        
+        
         brand: "Life",
         description: "Printed Cotton Regular Fit Mens T-Shirt",
         price: "299",
@@ -66,6 +73,10 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h6d/hb1/16461070270494/S21187STRPO09B_WHITE.jpg_230Wx334H",
+        img1: "https://sslimages.shoppersstop.com/sys-master/images/hb3/h8d/16462196801566/S21187STRPO09B_WHITE_alt1.jpg_1088Wx1632H",
+        img2:"https://sslimages.shoppersstop.com/sys-master/images/he4/he7/16463643475998/S21187STRPO09B_WHITE_alt2.jpg_1088Wx1632H",
+        
+        
         brand: "Stop",
         description: "Striped Cotton Blend Regular Fit Mens T-Shirt",
         price: "599",
@@ -74,7 +85,10 @@ let data = [
         color: "white",
     },
     {
+        img1: "https://sslimages.shoppersstop.com/sys-master/images/heb/hf7/26461347479582/AADI-FT1433-SG_SILVER_GREY_alt1.jpg_1088Wx1632H",
+        img2:"https://sslimages.shoppersstop.com/sys-master/images/h15/h53/26460497346590/AADI-FT1433-SG_SILVER_GREY_alt2.jpg_1088Wx1632H",
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h15/h53/26460497346590/AADI-FT1433-SG_SILVER_GREY_alt2.jpg_1088Wx1632H",
+        
         brand: "Adidas",
         description: "Solid Polyester Mens T-Shirt",
         price: "1799",
@@ -85,6 +99,8 @@ let data = [
     // first 5 complete consist - one item
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/ha6/h20/13805188120606/205811815_9324.jpg_230Wx334H",
+        img1: "https://sslimages.shoppersstop.com/sys-master/images/h1f/h4d/13808318644254/205811815_9324_alt1.jpg_1088Wx1632H",
+        img2:"https://sslimages.shoppersstop.com/sys-master/images/ha8/hd4/13808771039262/205811815_9324_alt2.jpg_1088Wx1632H",
         brand: "Adidas",
         description: "Men Polo",
         price: "849",
@@ -94,6 +110,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hc5/h14/17184108970014/AMAD-GQ2228-BK_BLACK_alt2.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Adidas",
         description: "Blended Regular Fit Mens Active T-Shirt",
         price: "1199",
@@ -103,6 +121,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h6b/hb9/17556074364958/AW21IST018_BRICK_RED.jpg_230Wx334H",
+        img1: "",
+        img2:"",
         brand: "Infuse",
         description: "Solid Cotton Jersey Regular Fit Mens T-Shirt",
         price: "249",
@@ -112,6 +132,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h44/h7e/17556130136094/AW21IST018_LILAC_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Infuse",
         description: "Solid Cotton Jersey Regular Fit Mens T-Shirt",
         price: "249",
@@ -121,6 +143,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h9a/hb4/16383081906206/S21183RNP456C_CORAL_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Life",
         description: "Printed Cotton Regular Fit Mens T-Shirt",
         price: "299",
@@ -130,6 +154,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h27/he0/17548527140894/S21183RNP456W_WHITE_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Life",
         description: "Printed Cotton Regular Fit Mens T-Shirt",
         price: "299",
@@ -139,6 +165,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h5a/h58/17562092765214/S21831SUPP9BK_BLACK.jpg_230Wx334H",
+        img1: "",
+        img2:"",
         brand: "Fratini",
         description: "Solid Cotton Blend Regular Fit Mens T-Shirt",
         price: "649",
@@ -148,6 +176,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/he7/h19/16234369974302/S21831HONEY1T_TEAL_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Fratini",
         description: "Solid INHANCE Coton Regular Fit Mens T-Shirt",
         price: "839",
@@ -157,6 +187,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h82/h38/16553622568990/S21187GRAFT507B_ORANGE_MELANGE_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Stop",
         description: "Printed Cotton Stretch Regular Fit Mens T-Shirt",
         price: "299",
@@ -166,6 +198,8 @@ let data = [
     },
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/ha2/h6d/14402444787742/206557573_9324_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Stop",
         description: "Mens Round Neck Printed T-Shirt",
         price: "374",
@@ -176,6 +210,8 @@ let data = [
     // another 5 with 2 items each-- 5*2 = 10 + (5 previous) = 15
     {
         imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h1f/h20/16450066022430/S21187STRPOL02B_DARK_CORAL_alt1.jpg_1088Wx1632H",
+        img1: "",
+        img2:"",
         brand: "Stop",
         description: "Solid Cotton Blend Men's T-Shirt",
         price: "599",
@@ -279,7 +315,11 @@ function showProduct(data) {
     let box=document.getElementById("box")
     data.forEach(item => {
         let div = document.createElement("div")
-        div.setAttribute("class","cardDiv")
+        div.setAttribute("class", "cardDiv")
+        div.onclick = function () {
+            localStorage.setItem("cardItem", JSON.stringify(item))
+            window.location.href="cart.html"
+        }
         let img = document.createElement("img");
         img.src = item.imgUrl;
         let brand = document.createElement("h3");
