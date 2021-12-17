@@ -50,6 +50,7 @@
     width: 46%;
     margin: auto;
     display: flex;
+    margin-bottom: 10px;
     
 }
 #heading>h4{
@@ -91,6 +92,7 @@ h1{
     width: 80%;
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 190px;
 }
 /* #fa1{
     margin-left: 150px;
