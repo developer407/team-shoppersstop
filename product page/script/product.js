@@ -1,3 +1,10 @@
+import navbar from "/scripts/navbarAndFooter.js";
+navbarDivArea.innerHTML = navbar();
+// scripts\navbarAndFooter.js
+// console.log(navbar)
+
+
+
 let slideData = [
     {imgUrl: "https://cdn.dynamicyield.com/api/8770829/images/12aee4ee0a2a3__UCB--plp--1232-by-216-WEB.jpg" },
     {imgUrl:"https://cdn.dynamicyield.com/api/8770829/images/23af72993b1be__Tommy-Hilfifer-PLP-Static.jpg"},
@@ -23,7 +30,7 @@ var slideIndex = 0;
 function showSlides() {
  
   var slides = document.getElementsByClassName("slides");
-  for (i = 0; i < slideData.length; i++) {
+  for (let  i = 0; i < slideData.length; i++) {
     slides[i].style.display = "none";
     }
     slides[slideIndex].style.display = "block";
@@ -323,6 +330,7 @@ function showProduct(data) {
         let img = document.createElement("img");
         img.src = item.imgUrl;
         let brand = document.createElement("h3");
+        brand.setAttribute("id","brand")
         brand.innerText = item.brand;
         let description = document.createElement("p")
         description.innerText = item.description;
@@ -352,6 +360,76 @@ let count1 = 0;
 let count2 = 0;
 let count3 = 0;
 let count4 = 0;
+
+showBrands.addEventListener("click",showBrand)
+showOffers.addEventListener("click",showOffer)
+showPrices.addEventListener("click",showPrice)
+showColors.addEventListener("click",showColor)
+showDeliverys.addEventListener("click",showDelivery)
+
+
+
+sortByAdidass.addEventListener("click",function(){
+    sortByAdidas(data)
+})
+sortByStops.addEventListener("click",function(){
+    sortByStop(data)
+})
+sortByLifes.addEventListener("click",function(){
+    sortByLife(data)
+})
+sortByInfuses.addEventListener("click",function(){
+    sortByInfuse(data)
+})
+sortByFratinis.addEventListener("click",function(){
+    sortByFratini(data)
+})
+sortByFratinis.addEventListener("click",function(){
+    sortByFratini(data)
+})
+sortByFratinis.addEventListener("click",function(){
+    sortByFratini(data)
+})
+
+// sory by colors
+
+oranges.addEventListener("click",function(){
+    orange(data)
+})
+whites.addEventListener("click",function(){
+    white(data)
+})
+blacks.addEventListener("click",function(){
+    black(data)
+})
+yellows.addEventListener("click",function(){
+    yellow(data)
+})
+blues.addEventListener("click",function(){
+    blue(data)
+})
+
+// oranges.addEventListener("click",orange)
+sortByOff30s.addEventListener("click",function(){
+    sortByOff30(data)
+})
+sortByOff50s.addEventListener("click",function(){
+    sortByOff50(data)
+})
+sortByOff70s.addEventListener("click",function(){
+    sortByOff70(data)
+})
+
+lowToHeighs.addEventListener("click",function(){
+    lowToHeigh(data)
+})
+
+heighToLows.addEventListener("click",function(){
+    heighToLow(data)
+})
+
+
+
 function showBrand() {
     let sortbrand = document.getElementById("sortbrand");
     count++
