@@ -1,0 +1,90 @@
+.footer-banner {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 5vw;
+}
+
+#footer-banner-1 {
+    background-color: #f9f9fa;
+
+}
+
+#footer-banner-2 {
+    background-color: #fff;
+}
+
+.footer-banner>img {
+    overflow: hidden;
+}
+
+#white p,
+#black p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#white {
+    margin: 10px auto;
+    padding:0 8vw;
+    color: black;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+#white a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+#white ul {
+    flex:1;
+    list-style-type: none;
+    margin-left: 3%;
+    line-height: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+#white>ul:first-child{
+    margin-left: 0;
+    
+}
+
+#black {
+    margin: 10px auto;
+    padding:0 5vw;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#black a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+#black ul {
+    flex:1;
+    list-style-type: none;
+    margin-left: 3%;
+    line-height: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#brand_option {
+    max-width: 360px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    margin-top: 30px;
+}
