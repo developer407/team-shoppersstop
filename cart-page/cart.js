@@ -1,0 +1,4 @@
+const cart_page = (data) => {
+    return `<div><img src=${data.img}></div><div id="div2"><h1>${data.brand}</h1><h3>${data.description}</h3><div id="price"><h3>₹${data.price}</h3><h3>₹${data.offPrice}</h3><h3>${data.discount}</h3></div><p>Includes all taxes</p><div id="sizes"><span>SMALL</span><span>MEDIUM</span><span>LARGE</span><span>X-LARGE</span><span>XX-LARGE</span></div><p>14 days easy return and exchange applicable for this item</p><div><i><i class="fas fa-share-alt fa-xl"></i></i><i><i class="far fa-heart fa-xl"></i></i><button>ADD TO BAG</button></div></div>`;
+}
+export default cart_page;
