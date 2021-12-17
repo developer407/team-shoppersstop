@@ -674,7 +674,7 @@ for(let i = 0; i < m1.length; i++){
 }
 
 function showProductPage(){
-  window.open("/product page/product.html")
+  window.location.href = "/product page/product.html";
 }
 
 
