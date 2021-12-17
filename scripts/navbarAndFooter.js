@@ -4,7 +4,7 @@ function navbar(){
     <header>
       <!-- first box -->
       <div class="inside-box-1">
-        <div>
+        <div class = "all-store-icon">
           <span class="material-icons-outlined"> store </span>
           <p>All Stores</p>
         </div>

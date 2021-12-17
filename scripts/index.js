@@ -1,6 +1,8 @@
 import navbar from "/scripts/navbarAndFooter.js";
 navbarDivArea.innerHTML = navbar();
 
+let allStoreIcon = document.querySelector(".all-store-icon")
+
 // on scroll bar hided the linksbar
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -666,8 +668,15 @@ for(let i = 0; i < be1.length; i++){
 for(let i = 0; i < m1.length; i++){
   m1[i].addEventListener("mouseover",function(){
     m1Index(m1[i],i)
+    let tShirtPolos = document.querySelector(".t-shirts-polos")
+    tShirtPolos.addEventListener("click",showProductPage)
   })
 }
+
+function showProductPage(){
+  console.log("product Page");
+}
+
 
 for(let i = 0; i < wa1.length; i++){
   wa1[i].addEventListener("mouseover",function(){
@@ -698,4 +707,10 @@ function m1Index(ele,i){
 
 function wa1Index(ele,i){
   watchesDiscountDiv.innerHTML = wa1Arr[i].wa1Details
+}
+
+allStoreIcon.addEventListener("click",showAllStorePage)
+
+function showAllStorePage(){
+  window.open("allstore/allstore.html")
 }
