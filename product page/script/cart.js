@@ -22,7 +22,7 @@ const cart_page = (data) => {
     <i class="fas fa-share-alt fa-xl share"></i></i>
     <i class="fas fa-heart fa-xl heart"></i>
 </i>
-    <button>ADD TO BAG</button></div>
+    <button id = "addToCart">ADD TO BAG</button></div>
     </div>`;
 }
 export default cart_page;
