@@ -17,7 +17,11 @@ const cart_page = (data) => {
     </div>
     <p>Includes all taxes</p>
     <div id="sizes"><span>SMALL</span><span>MEDIUM</span><span>LARGE</span><span>X-LARGE</span><span>XX-LARGE</span>
-    </div><p>14 days easy return and exchange applicable for this item</p><div><i><i class="fas fa-share-alt fa-xl"></i></i><i><i class="far fa-heart fa-xl"></i></i>
+    </div><p>14 days easy return and exchange applicable for this item</p>
+    <div>
+    <i class="fas fa-share-alt fa-xl share"></i></i>
+    <i class="fas fa-heart fa-xl heart"></i>
+</i>
     <button>ADD TO BAG</button></div>
     </div>`;
 }
