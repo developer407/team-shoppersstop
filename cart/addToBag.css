@@ -36,3 +36,108 @@
     color: white;
     cursor: pointer;
 }
+
+.add-to-cart-items{
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 30px;
+}
+
+.add-to-cart-items >div:last-child{
+    /* border: 1px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 10px;
+    width: 20%;
+}
+
+.add-to-cart-items >div:first-child{
+    /* border: 1px solid red; */
+    width: 80%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 0 15px;
+}
+
+
+.cart-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.h2{
+    text-align: center;
+}
+
+.promo-code{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.promo-code>input{
+    width: 70%;
+}
+
+.apply{
+    /* border: 1px solid black; */
+    width: 20%;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+
+}
+.sub-portion-1 >div{
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+font-weight: bold;
+line-height: 35px;
+}
+
+.product-slide-box{
+    /* border: 1px solid black; */box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 180px;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.product-slide-box >div{
+    /* border: 1px solid red; */
+}
+
+.img-left-div{
+    width: 20%;
+}
+
+.img-left-div>img{
+  object-fit: contain;
+}
+
+.img-right-div{
+    width: 35%;
+}
+
+.delivery-availibility{
+    /* border: 1px solid blue; */
+    width: 45%;
+    color: gray;
+    line-height: 35px;
+}
+
+.product-price{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 150px;
+    float: right;
+    line-height: 20px;
+}
+
+
+
