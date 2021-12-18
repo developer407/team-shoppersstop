@@ -1,143 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+3&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="../responsive sheets/mobile.css" />
-    <link rel="stylesheet" href="../responsive sheets/tablet.css" />
-    <!-- footer section css -->
-    <link rel="stylesheet" href="../footer/index.css" />
-    <link rel="stylesheet" href="./addToBag.css">
-  </head>
-  <body>
-    <!-- navbar section -->
-    <div id="navbarDivArea"></div>
 
-    <div class="bagDiv">
-      <img src="https://sslimages.shoppersstop.com/sys-master/root/h7f/h51/26715718778910/big-sale_coupon-strip_webnewcoupncode.jpg" alt="">
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+3&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="../responsive sheets/mobile.css" />
+  <link rel="stylesheet" href="../responsive sheets/tablet.css" />
+  <!-- footer section css -->
+  <link rel="stylesheet" href="../footer/index.css" />
+  <link rel="stylesheet" href="./addToBag.css">
+</head>
 
-    <div class="selected-products-container">
-      <div>
-        <h2>Shopping Bag</h2>
-        <p>Your shopping bag is empty</p>
-        <div class = "continue-btn">
-          <h3>CONTINUE SHOPPING</h3>
-        </div>
-      </div>
-      <!-- display selected product  -->
-    </div>
+<body>
+  <!-- navbar section -->
+  <div id="navbarDivArea"></div>
 
-    <div class="add-to-cart-items">
-      <div class="to-be-append-here">
-        <div class="cart-head">
-          <h1 class="h1">Shopping Bag<span class="h1" id="h1">(2 Items)</span></h1>
-          <span>Total<h2>RS 8,996</h2></span>
-        </div>
-        
-        <!-- don't touch the above one -->
-<!-- this below data you have to replace sachin bro -->
+  <div class="bagDiv">
+    <img
+      src="https://sslimages.shoppersstop.com/sys-master/root/h7f/h51/26715718778910/big-sale_coupon-strip_webnewcoupncode.jpg"
+      alt="">
+  </div>
 
-        <div class="product-slide-box">
-          <div class="img-left-div">
-            <img width="100%" height="100%"  src="https://sslimages.shoppersstop.com/sys-master/images/h25/h73/10055156826142/201769277_9999.jpg_230Wx334H" alt="">
-          </div>
-          <div class="img-right-div">
-            <p>FOSSIL</p>
-            <h5>Mens Chronograph Metallic Watch</h5>
-            <div>
-              <h3>Color:<span>No Color</span></h3>
-            </div>
-            <div>
-              <h3>Size:<span>LZ</span></h3>
-            </div>
-          </div>
-          <div class = "delivery-availibility">
-            <p>Typically delivered in 3-5 working days</p>
-            <p>Cash On Delivery</p>
-            <p>Express Store Pick Up</p>
-            <div class="product-price">
-              <p>Rs 7197</p>
-              <p>Rs 11995 (40% Off)</p>
-            </div>
-          </div>
-        </div>
-        
-<!-- this above data you have to replace -->
-<!-- dont't touch this below div -->
+  <div class="selected-products-container">
+
+    <!-- display selected product  -->
+  </div>
+
+  <div class="add-to-cart-items">
+    <div class="to-be-append-here">
+      <div class="cart-head">
+        <h1 class="h1">Shopping Bag<span class="h1" id="h1"></span></h1>
+        <span>Total<h2></h2></span>
       </div>
 
-      <!-- // this is dummy div -->
-      <div class="right-portion">
-        <h2 class="h2">Order Summary</h2>
-        <div class="promo-code">
-          <input type="text">
-          <div class="apply">
-            apply
-          </div>
+
+      <div class="leftCont">
+
+      </div>
+
+      <!-- this above data you have to replace -->
+      <!-- dont't touch this below div -->
+    </div>
+
+    <!-- // this is dummy div -->
+    <div class="right-portion">
+      <h2 class="h2">Order Summary</h2>
+      <div class="promo-code">
+        <input type="text" id="coupon">
+        <div class="apply">
+          apply
         </div>
-        <div class="sub-portion-1">
-          <div>
-            <p>Sub total</p>
-            <p>Rs8996</p>
-          </div>
-          <div>
-            <p>Delivery charges*</p>
-            <p>Free</p>
-          </div>
-          <div>
-            <p>Gift packing</p>
-            <p>Free</p>
-          </div>
-          <div>
-            <p>Offer Discount</p>
-            <p>4,798</p>
-          </div>
-          <div>
-            <p>Coupon Discount</p>
-            <p>NA</p>
-          </div>
-          <hr>
-          <div>
-            <p>Payable Amount</p>
-            <p>Rs8996</p>
-          </div>
-          <div>
-            <p>You have saved</p>
-            <p>Rs4,798</p>
-          </div>
+      </div>
+      <div class="sub-portion-1">
+        <div>
+          <p>Sub total</p>
+          <p id="sub-total"></p>
+        </div>
+        <div>
+          <p>Delivery charges*</p>
+          <p>Free</p>
+        </div>
+        <div>
+          <p>Gift packing</p>
+          <p>Free</p>
+        </div>
+        <div>
+          <p>Offer Discount</p>
+          <p id="Offer-Discount"></p>
+        </div>
+        <div>
+          <p>Coupon Discount</p>
+          <p>NA</p>
         </div>
         <hr>
+        <div>
+          <p>Payable Amount</p>
+          <p id="Payable-Amount"></p>
+        </div>
+        <div>
+          <p>You have saved</p>
+          <p id="saved"></p>
+        </div>
       </div>
+      <hr>
     </div>
-    <!-- footer section -->
-    <div id="footer-section-container">
-      <div class="footer-banner" id="footer-banner-1">
-        <img src="../footer/img/f1.PNG" alt="">
-        <img src="../footer/img/f2.PNG" alt="">
-        <img src="../footer/img/f3.PNG" alt="">
-      </div>
-      <div class="footer-banner" id="footer-banner-2">
-        <img src="../footer/img/f4.PNG" alt="">
-        <img src="../footer/img/f5.PNG" alt="">
-        <img src="../footer/img/f6.PNG" alt="">
-      </div>
-      <div id="footer-section"></div>
+  </div>
+  <!-- footer section -->
+  <div id="footer-section-container">
+    <div class="footer-banner" id="footer-banner-1">
+      <img src="../footer/img/f1.PNG" alt="">
+      <img src="../footer/img/f2.PNG" alt="">
+      <img src="../footer/img/f3.PNG" alt="">
     </div>
-  </body>
+    <div class="footer-banner" id="footer-banner-2">
+      <img src="../footer/img/f4.PNG" alt="">
+      <img src="../footer/img/f5.PNG" alt="">
+      <img src="../footer/img/f6.PNG" alt="">
+    </div>
+    <div id="footer-section"></div>
+  </div>
+</body>
+
 </html>
 <!-- navbar section script -->
 <script type="module" src="../scripts/index.js"></script>

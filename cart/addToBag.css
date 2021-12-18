@@ -102,7 +102,7 @@ line-height: 35px;
 
 .product-slide-box{
     /* border: 1px solid black; */box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    height: 180px;
+    height: 200px;
     display: flex;
     padding: 10px;
     margin-bottom: 20px;
@@ -139,4 +139,17 @@ line-height: 35px;
     line-height: 20px;
 }
 
+.remBtn{
+    background-color:tomato;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius:3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.remBtn:hover{
+    background-color:black;
+    color: #fff;
 
+}
