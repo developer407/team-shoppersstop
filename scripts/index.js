@@ -737,3 +737,7 @@ const logo_div = document.querySelector(".sub-inside-box-1");
 logo_div.onclick = () => {
   window.location.href = "../index.html"
 }
+const shoppingBag = document.querySelector(".shoppingBag")
+shoppingBag.onclick =()=>{
+  window.location.href = "./cart/addToBag.html"
+}

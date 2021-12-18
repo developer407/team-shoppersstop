@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bagDiv{
+    margin-top: 140px;
+    /* border: 1px solid red; */
+    height: 150px;
+}
+
+.bagDiv >img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.selected-products-container{
+    /* border: 1px solid black; */
+    width: 30%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.selected-products-container >div >div{
+    border: 1px solid tomato;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: tomato;
+}
+
+.selected-products-container > div >div:hover{
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
