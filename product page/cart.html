@@ -48,14 +48,24 @@
     //here use the local storage data to view cart;
     container.innerHTML = cart_Page(data);
     let btn = document.querySelector("button");
+
+    const sizesDiv = document.querySelectorAll("#sizes>span");
+    sizesDiv.forEach((span) => {
+        span.onclick = () => {
+            span.style.backgroundColor ="pink";
+            data.size = span.textContent;
+        }
+    })
+
+    let cardProducts = JSON.parse(localStorage.getItem("cardProducts")) || [];
     btn.onclick = () => {
-        console.log("added to cart");
+        cardProducts.push(data);
+        localStorage.setItem("cardProducts", JSON.stringify(cardProducts));
+        // window.location.href = "../cart/addToBag.html";
     }
 </script>
 <!-- navbar section script -->
 <script type="module" src="../scripts/index.js"></script>
-
-
 
 <!-- footer section script -->
 <script src="../footer/index.js"></script>

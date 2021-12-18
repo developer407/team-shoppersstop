@@ -739,5 +739,5 @@ logo_div.onclick = () => {
 }
 const shoppingBag = document.querySelector(".shoppingBag")
 shoppingBag.onclick =()=>{
-  window.location.href = "./cart/addToBag.html"
+  window.location.href = "../cart/addToBag.html"
 }
