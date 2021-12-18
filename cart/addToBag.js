@@ -5,3 +5,6 @@ const continueBtn = document.querySelector(".continue-btn");
 continueBtn.onclick = ()=>{
     window.location.href = "../index.html"
 }
+
+const products = JSON.parse(localStorage.getItem("cardProducts"));
+
