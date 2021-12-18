@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,21 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+3&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../responsive sheets/mobile.css" />
+    <link rel="stylesheet" href="../responsive sheets/tablet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="../footer/index.css">
+    </link>
 </head>
 
 <body>
-    <div id="cart-container">
-
+    <!-- navbar section -->
+    <div id="navbarDivArea"></div>
+    <div id="cart-container"></div>
+    <!-- footer section -->
+    <div id="footer-section-container">
+        <div class="footer-banner" id="footer-banner-1">
+            <img src="../footer/img/f1.PNG" alt="">
+            <img src="../footer/img/f2.PNG" alt="">
+            <img src="../footer/img/f3.PNG" alt="">
+        </div>
+        <div class="footer-banner" id="footer-banner-2">
+            <img src="../footer/img/f4.PNG" alt="">
+            <img src="../footer/img/f5.PNG" alt="">
+            <img src="../footer/img/f6.PNG" alt="">
+        </div>
+        <div id="footer-section"></div>
     </div>
 </body>
 <script type="module">
     import cart_Page from "./script/cart.js";
     const container = document.querySelector("#cart-container");
-    let data=JSON.parse(localStorage.getItem("cardItem"))
+    let data = JSON.parse(localStorage.getItem("cardItem"))
     //here use the local storage data to view cart;
     container.innerHTML = cart_Page(data);
     let btn = document.querySelector("button");
@@ -29,5 +52,13 @@
         console.log("added to cart");
     }
 </script>
+<!-- navbar section script -->
+<script type="module" src="../scripts/index.js"></script>
+
+
+
+<!-- footer section script -->
+<script src="../footer/index.js"></script>
+<!-- <script src="../signup-signin/signUp.html"></script> -->
 
 </html>
