@@ -86,8 +86,7 @@ if (!products || products.length == 0) {
     })
   }
 }
-const checkout = () => {
-  console.log("here")
-  window.location.href = "../product page/Address.html"
-
+const checkoutBtn = document.querySelector("#checkBtn");
+checkoutBtn.onclick = () => {
+  window.location.href = "../product page/Address.html";
 }

@@ -1,8 +1,11 @@
-
+body{
+    background-color: rgba(0, 0, 0, 0.267)
+}
 #container{
     width: 50%;
     display: flex;
     flex-direction: column;
+    background-color:white;
     
     margin: auto;
     margin-top: 50px;
@@ -37,7 +40,7 @@ button{
     margin-top: 30px;
     margin: auto;
     border-radius: 50px;
-    background-color: rgb(163, 0, 122);
+    background-color: tomato;
     color: white;
     border: 1px solid green;
     cursor: pointer;
