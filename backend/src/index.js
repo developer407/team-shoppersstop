@@ -3,10 +3,12 @@ const app = express();
 const {body,validationResult} = require("express-validator")
 const {register,login} = require("./controllers/authentication.controller")
 const passport = require("./config/passport");
-const productController = require("./controllers/product.controller")
+const productController = require("./controllers/product.controller");
+const cartController = require("./controllers/cart.controller");
 app.use(express.json())
 
 app.use("/products",productController)
+app.use("/orders",orderController)
 
 app.use(passport.initialize());
 
