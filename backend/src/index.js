@@ -56,12 +56,14 @@ body("gender").custom((value)=>{
     }
     return true;
 }),
-body("role").custom((value)=>{
-    if(value != "customer" && value != "seller"){
-        throw new Error
+body("roles").custom((value)=>{
+    let arr = ["customer","seller","admin"];
+    for(let x of value){
+        if(!(arr.includes(x))){
+            throw new Error
+        }  
     }
-
-    return true
+    return true;
 }),
 body("mobile").isLength({min:10,max:10}).withMessage("this is a incorrect number"),
 register);
