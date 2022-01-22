@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema(
         password:{type:String,required:true},
         gender:{type:String,required:false},
         mobile:{type:Number,required:false},
-        role:[{type:String,required:true}],
+        roles:[{type:String,required:true}],
         product_id:[{type:mongoose.Schema.Types.ObjectId,ref:"product",required:false}]
     },
     {

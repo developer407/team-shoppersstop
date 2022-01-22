@@ -32,7 +32,7 @@ const register = async(req,res)=>{
         user = await User.create(req.body);
         
         const token = newToken(user)
-        res.status(201).send({user,token})
+        return res.status(201).send({user,token})
 
     }catch(err){
         return res.status(500).send({message:"server error"})
