@@ -46,7 +46,7 @@ if (!products || products.length == 0) {
       let leftBoxContent = `
         <div class="product-slide-box">
         <div class="img-left-div">
-            <img width="100%" height="100%"  src="${product.imgUrl}" alt=""></div>
+            <img width="100%" height="100%"  src="${product.imgUrl[0]}" alt=""></div>
           <div class="img-right-div">
             <p>${product.brand}</p>
             <h5>${product.description}</h5>

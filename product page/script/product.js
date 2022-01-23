@@ -51,282 +51,32 @@ function showSlides() {
 }
 showSlides();
 
-
-let data = [{
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hc2/h04/17548630392862/S21831RGYPO17IB_INK_BLUE.jpg_230Wx334H",
-        img1: "https://sslimages.shoppersstop.com/sys-master/images/h4c/hb7/17548633800734/S21831RGYPO17IB_INK_BLUE_alt1.jpg_1088Wx1632H",
-        img2: "https://sslimages.shoppersstop.com/sys-master/images/h30/h0f/17548627312670/S21831RGYPO17IB_INK_BLUE_alt2.jpg_1088Wx1632H",
-        brand: "Fratini",
-        description: "Stripes Cotton Regular Fit Mens T-Shirt - ink Blue",
-        price: "699",
-        offPrice: "1399",
-        discount: "50% off",
-        color: "blue",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h93/hde/17556188102686/AW21IST018_BLACK.jpg_230Wx334H",
-
-        brand: "Infuse",
-        description: "Solid Cotton Jersey Regular Fit Mens T-Shirt",
-        price: "249",
-        offPrice: "499",
-        discount: "50% off",
-        color: "black",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hce/h6d/16208905633822/S21183SLH436N_NAVY.jpg_230Wx334H",
-        img1: "https://sslimages.shoppersstop.com/sys-master/images/h1a/h77/16208012312606/S21183SLH436N_NAVY_alt1.jpg_1088Wx1632H",
-        img2: "https://sslimages.shoppersstop.com/sys-master/images/hf0/h96/16237773979678/S21183SLH436N_NAVY_alt2.jpg_1088Wx1632H",
+let data;
 
 
-        brand: "Life",
-        description: "Printed Cotton Regular Fit Mens T-Shirt",
-        price: "299",
-        offPrice: "599",
-        discount: "50% off",
-        color: "blue",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h6d/hb1/16461070270494/S21187STRPO09B_WHITE.jpg_230Wx334H",
-        img1: "https://sslimages.shoppersstop.com/sys-master/images/hb3/h8d/16462196801566/S21187STRPO09B_WHITE_alt1.jpg_1088Wx1632H",
-        img2: "https://sslimages.shoppersstop.com/sys-master/images/he4/he7/16463643475998/S21187STRPO09B_WHITE_alt2.jpg_1088Wx1632H",
+async function allProducts(){
 
+    let res=await fetch("https://shopperstop-backend.herokuapp.com/products");
+    let data=await res.json()
+    
+    return data;
 
-        brand: "Stop",
-        description: "Striped Cotton Blend Regular Fit Mens T-Shirt",
-        price: "599",
-        offPrice: "799",
-        discount: "25% off",
-        color: "white",
-    },
-    {
-        img1: "https://sslimages.shoppersstop.com/sys-master/images/heb/hf7/26461347479582/AADI-FT1433-SG_SILVER_GREY_alt1.jpg_1088Wx1632H",
-        img2: "https://sslimages.shoppersstop.com/sys-master/images/h15/h53/26460497346590/AADI-FT1433-SG_SILVER_GREY_alt2.jpg_1088Wx1632H",
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h15/h53/26460497346590/AADI-FT1433-SG_SILVER_GREY_alt2.jpg_1088Wx1632H",
+    
+}  
 
-        brand: "Adidas",
-        description: "Solid Polyester Mens T-Shirt",
-        price: "1799",
-        offPrice: "500",
-        discount: "30% off",
-        color: "orange"
-    },
-    // first 5 complete consist - one item
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/ha6/h20/13805188120606/205811815_9324.jpg_230Wx334H",
-        img1: "https://sslimages.shoppersstop.com/sys-master/images/h1f/h4d/13808318644254/205811815_9324_alt1.jpg_1088Wx1632H",
-        img2: "https://sslimages.shoppersstop.com/sys-master/images/ha8/hd4/13808771039262/205811815_9324_alt2.jpg_1088Wx1632H",
-        brand: "Adidas",
-        description: "Men Polo",
-        price: "849",
-        offPrice: "1699",
-        discount: "50% off",
-        color: "blue",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hc5/h14/17184108970014/AMAD-GQ2228-BK_BLACK_alt2.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Adidas",
-        description: "Blended Regular Fit Mens Active T-Shirt",
-        price: "1199",
-        offPrice: "1999",
-        discount: "40% off",
-        color: "black",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h6b/hb9/17556074364958/AW21IST018_BRICK_RED.jpg_230Wx334H",
-        img1: "",
-        img2: "",
-        brand: "Infuse",
-        description: "Solid Cotton Jersey Regular Fit Mens T-Shirt",
-        price: "249",
-        offPrice: "499",
-        discount: "50% off",
-        color: "orange",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h44/h7e/17556130136094/AW21IST018_LILAC_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Infuse",
-        description: "Solid Cotton Jersey Regular Fit Mens T-Shirt",
-        price: "249",
-        offPrice: "499",
-        discount: "50% off",
-        color: "white",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h9a/hb4/16383081906206/S21183RNP456C_CORAL_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Life",
-        description: "Printed Cotton Regular Fit Mens T-Shirt",
-        price: "299",
-        offPrice: "599",
-        discount: "50% off",
-        color: "orange",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h27/he0/17548527140894/S21183RNP456W_WHITE_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Life",
-        description: "Printed Cotton Regular Fit Mens T-Shirt",
-        price: "299",
-        offPrice: "599",
-        discount: "50% off",
-        color: "white",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h5a/h58/17562092765214/S21831SUPP9BK_BLACK.jpg_230Wx334H",
-        img1: "",
-        img2: "",
-        brand: "Fratini",
-        description: "Solid Cotton Blend Regular Fit Mens T-Shirt",
-        price: "649",
-        offPrice: "1299",
-        discount: "50% off",
-        color: "black",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/he7/h19/16234369974302/S21831HONEY1T_TEAL_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Fratini",
-        description: "Solid INHANCE Coton Regular Fit Mens T-Shirt",
-        price: "839",
-        offPrice: "1199",
-        discount: "30% off",
-        color: "blue",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h82/h38/16553622568990/S21187GRAFT507B_ORANGE_MELANGE_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Stop",
-        description: "Printed Cotton Stretch Regular Fit Mens T-Shirt",
-        price: "299",
-        offPrice: "599",
-        discount: "50% off",
-        color: "orange"
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/ha2/h6d/14402444787742/206557573_9324_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Stop",
-        description: "Mens Round Neck Printed T-Shirt",
-        price: "374",
-        offPrice: "749",
-        discount: "50% off",
-        color: "blue",
-    },
-    // another 5 with 2 items each-- 5*2 = 10 + (5 previous) = 15
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h1f/h20/16450066022430/S21187STRPOL02B_DARK_CORAL_alt1.jpg_1088Wx1632H",
-        img1: "",
-        img2: "",
-        brand: "Stop",
-        description: "Solid Cotton Blend Men's T-Shirt",
-        price: "599",
-        offPrice: "799",
-        discount: "25% off",
-        color: "orange",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hc2/he7/16100331421726/S21187STRPPO10_WHITE_alt1.jpg_1088Wx1632H",
-        brand: "Stop",
-        description: "Mens Regular Fit Stripes Polo T-Shirt",
-        price: "599",
-        offPrice: "799",
-        discount: "25% off",
-        color: "white",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h72/h82/16470195896350/S21831SLUHE29M_MUSTARD_alt1.jpg_1088Wx1632H",
-        brand: "Fratini",
-        description: "Solid Cotton Regular Fit Mens T-Shirt",
-        price: "499",
-        offPrice: "999",
-        discount: "50% off",
-        color: "yellow"
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h5d/h7f/16549848612894/S21831JAQPO1MU_SPICY_MUSTARD_alt1.jpg_1088Wx1632H",
-        brand: "Fratini",
-        description: "Structure Cotton Blend Regular Fit Mens T-Shirt",
-        price: "649",
-        offPrice: "1299",
-        discount: "50% off",
-        color: "yellow",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hd2/h0d/16383097569310/S21183ODPOL314M_MUSTARD.jpg_230Wx334H",
-        brand: "Life",
-        description: "Printed Cotton Blend Regular Fit Mens Polo T-Shirt",
-        price: "599",
-        offPrice: "1199",
-        discount: "50% off",
-        color: "yellow",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hdf/h06/16884429848606/S21183AOP454W_OFF_WHITE_alt1.jpg_1088Wx1632H",
-        brand: "Life",
-        description: "Printed Cotton Regular Fit Mens T-ShirtSolid Cotton Blend Regular Fit Mens T-Shirt",
-        price: "349",
-        offPrice: "699",
-        discount: "50% off",
-        color: "white",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hba/h5d/26433743683614/AW21DQCN012_BLACK_alt1.jpg_1088Wx1632H",
-        brand: "Infuse",
-        description: "Printed Cotton Jersey Regular Fit Mens T-Shirt",
-        price: "349",
-        offPrice: "699",
-        discount: "50% off",
-        color: "black",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/hd5/h5c/17318874710046/AW21UNR014_BLACK_alt1.jpg_1088Wx1632H",
-        brand: "Infuse",
-        description: "Printed Cotton Regular Fit Mens T-Shirt",
-        price: "349",
-        offPrice: "699",
-        discount: "50% off",
-        color: "black",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h71/h54/26460366405662/AADI-GK9422-BK_BLACK_alt2.jpg_1088Wx1632H",
-        brand: "Adidas",
-        description: "Solid Cotton Blend Regular Fit Mens T-Shirt",
-        price: "649",
-        offPrice: "1299",
-        discount: "50% off",
-        color: "black"
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h99/heb/26460892594206/AMAD-H14668-BU_BLUE_alt2.jpg_1088Wx1632H",
-        brand: "Adidas",
-        description: "Printed Cotton Mens T-Shirt",
-        price: "800",
-        offPrice: "1499",
-        discount: "50% off",
-        color: "blue",
-    },
-    {
-        imgUrl: "https://sslimages.shoppersstop.com/sys-master/images/h87/h7b/15015794802718/206550222_RED_alt3.jpg_1088Wx1632H",
-        brand: "Fcuk",
-        description: "FCUK Solid Cotton Slim Fit Mens T-Shirt",
-        price: "1399",
-        offPrice: "1999",
-        discount: "70% off",
-        color: "orange",
+async function showProduct(data) {
+    console.log(data);
+    if (data == undefined) {
+        let allData = await allProducts();
+        data = allData;
     }
-]
-//
-function showProduct(data) {
+    
+
+    
+
+    //let productData = await allProducts;
+    
+
     let box = document.getElementById("box")
     data.forEach(item => {
         let div = document.createElement("div")
@@ -336,7 +86,7 @@ function showProduct(data) {
             window.location.href = "cart.html"
         }
         let img = document.createElement("img");
-        img.src = item.imgUrl;
+        img.src = item.imgUrl.length == 1 ? item.imgUrl[0] :item.imgUrl;
         let brand = document.createElement("h3");
         brand.setAttribute("id", "brand")
         brand.innerText = item.brand;
@@ -483,18 +233,22 @@ function showColor() {
     } else sortColor.style.display = "none"
 }
 
-function sortByAdidas(data) {
+async function sortByAdidas(data) {
+    let allData = await allProducts();
+    data = allData;
+
     let box = document.getElementById("box")
     box.innerHTML = null;
-    let result = data.filter(item =>
-        item.brand == "Adidas"
-    );
-
-
-    showProduct(result)
+    let result = data.filter(item => 
+        item.brand == "Adidas" 
+    ) 
+    showProduct(result);
 }
 
-function sortByLife(data) {
+async function sortByLife(data) {
+    let allData = await allProducts();
+    data = allData;
+
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -505,7 +259,9 @@ function sortByLife(data) {
     showProduct(result)
 }
 
-function sortByInfuse(data) {
+async function sortByInfuse(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -516,7 +272,9 @@ function sortByInfuse(data) {
     showProduct(result)
 }
 
-function sortByStop(data) {
+async function sortByStop(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -527,7 +285,9 @@ function sortByStop(data) {
     showProduct(result)
 }
 
-function sortByFratini(data) {
+async function sortByFratini(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -538,7 +298,9 @@ function sortByFratini(data) {
     showProduct(result)
 }
 
-function sortByOff30(data) {
+async function sortByOff30(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -549,7 +311,9 @@ function sortByOff30(data) {
     showProduct(result)
 }
 
-function sortByOff50(data) {
+async function sortByOff50(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -560,7 +324,9 @@ function sortByOff50(data) {
     showProduct(result)
 }
 
-function sortByOff70(data) {
+async function sortByOff70(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -573,7 +339,9 @@ function sortByOff70(data) {
 
 //sort by low to heigh
 
-function lowToHeigh(data) {
+async function lowToHeigh(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.sort((a, b) => a.price - b.price)
@@ -583,7 +351,9 @@ function lowToHeigh(data) {
 
 //sort by heigh to low
 
-function heighToLow(data) {
+async function heighToLow(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.sort((a, b) => b.price - a.price)
@@ -593,7 +363,9 @@ function heighToLow(data) {
 
 //sort by color
 
-function orange(data) {
+async function orange(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -604,7 +376,9 @@ function orange(data) {
     showProduct(result)
 }
 
-function white(data) {
+async function white(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -615,7 +389,9 @@ function white(data) {
     showProduct(result)
 }
 
-function black(data) {
+async function black(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -626,7 +402,9 @@ function black(data) {
     showProduct(result)
 }
 
-function blue(data) {
+async function blue(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>
@@ -637,7 +415,9 @@ function blue(data) {
     showProduct(result)
 }
 
-function yellow(data) {
+async function yellow(data) {
+    let allData = await allProducts();
+    data = allData;
     let box = document.getElementById("box")
     box.innerHTML = null;
     let result = data.filter(item =>

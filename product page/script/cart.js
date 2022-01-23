@@ -1,10 +1,10 @@
 const cart_page = (data) => {
     return `<div id="imgDiv">
     <div id="imgs">
-        <img src=${data.img1}>
-        <img src=${data.img2}>
+        <img src=${data.imgUrl[1]}>
+        <img src=${data.imgUrl[2]}>
     </div>
-    <div id="mainImg"><img src=${data.imgUrl}></div>
+    <div id="mainImg"><img src=${data.imgUrl[0]}></div>
     
     </div>
     <div id="div2">
