@@ -86,7 +86,8 @@ async function showProduct(data) {
             window.location.href = "cart.html"
         }
         let img = document.createElement("img");
-        img.src = item.imgUrl.length == 1 ? item.imgUrl[0] :item.imgUrl;
+        // img.src = item.imgUrl.length == 1 ? item.imgUrl[0] :item.imgUrl;
+        img.src = item.imgUrl[0]
         let brand = document.createElement("h3");
         brand.setAttribute("id", "brand")
         brand.innerText = item.brand;
